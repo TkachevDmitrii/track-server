@@ -24,7 +24,7 @@ mongoose.connection.on('connected', () => {
     console.log('connected to mongo instance');
 });
 mongoose.connection.on('error', err => {
-    console.err('Error connecting to mongo', err);
+    // console.err('Error connecting to mongo', err);
 });
 
 app.get('/', requireAuth, (req, res) => {
